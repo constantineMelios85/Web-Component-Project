@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Component Project</title>
+  </head>
+  <body>
+    <game-title content="Scratch Game"></game-title>
+    <flex-box align-items="center" justify-content="space-between" gap="24px" wrap="wrap">
+      <scratch-game
+        image="images/mario.png"
+        brush="images/mushroom.png"
+        radius="5%"
+        container-border="8px solid blue"
+        message="Have a laugh!"
+      >
+        <p>LOL</p>
+      </scratch-game>
+      <scratch-game
+        width="200"
+        height="200"
+        container-border="5px dashed green"
+        image="images/link.jpeg"
+        brush="images/sword.png"
+        message="Better luck next time"
+      >
+        <button>You lost</button>
+      </scratch-game>
+      <scratch-game
+        container-border="2px dotted blue"
+        image="images/sonic.png"
+        brush="images/ring.png"
+        message="You have to run for it!"
+      >
+        <pre>
+Fast
+      &
+          Furious!
+        </pre>
+      </scratch-game>
+      <scratch-game
+        width="400"
+        height="400"
+        container-border="3px solid red"
+        image="images/kirby.jpeg"
+        brush="images/star.png"
+        message="You won!"
+      >
+        <h2>You won mate!</h2>
+      </scratch-game>
+    </flex-box>
+
+    <script type="module" src="scratch-game.js"></script>
+    <script type="module" src="game-title.js"></script>
+    <script type="module" src="flex-box.js"></script>
+  </body>
+</html>
